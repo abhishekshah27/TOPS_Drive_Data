@@ -1,0 +1,35 @@
+out.println("<script src="validation/sweetalert2.all.js"></script>");
+out.println("<script src='validation/jqueryalert.min.js'></script>");
+out.println("<script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>");
+
+
+
+<script>
+	$(document).ready(function(){	
+	swal ( 'Welcome' , 'Successfully Logged in!' , 'Success' )		
+	});
+</script>
+
+
+
+
+out.println("<script src='validation/sweetalert2.all.js'></script>");
+out.println("<script src='validation/jqueryalert.min.js'></script>");
+out.println("<script>");
+out.println("$(document).ready(function(){");
+out.println("swal ( 'Welcome' , 'Successfully Logged in!' , 'success' )");
+out.println("});");
+out.println("</script>");			
+request.getRequestDispatcher("index1.jsp").include(request, response);
+
+
+
+
+out.println("<script src='validation/sweetalert2.all.js'></script>");
+out.println("<script src='validation/jqueryalert.min.js'></script>");
+out.println("<script>");
+out.println("$(document).ready(function(){");
+out.println("swal ( 'Error' , 'Username or Password is Incorrect!' , 'error' )");
+out.println("});");
+out.println("</script>");
+request.getRequestDispatcher("index.jsp").include(request, response);
